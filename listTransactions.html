@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>List Transactions</title>
+
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+
+</head>
+<body>
+
+
+<div>
+    <h1>Fetch Paypal API ALL Transactions</h1>
+    <form id="dateRange">
+        <label>Start Date: </label><input id="sDate" type="date">
+        <label>End Date: </label><input id="eDate" type="date">
+        <input type="submit" value="Submit">
+    </form>
+
+    <br />
+    <!-- Table to display fetched user data -->
+
+        <table class="table table-striped">
+            <tr  class="bg-info">
+                <th>Transaction Id</th>
+                <th>Transaction Date</th>
+                <th>Transaction Amount</th>
+                <th>Transaction Currency</th>
+            </tr>
+
+            <tbody id="myTable">
+
+            </tbody>
+        </table>
+
+<div id='transactions'></div>
+
+
+</div>
+
+<!-- Link JavaScript file -->
+<script src="listTransactions.js"></script>
+</body>
+</html>

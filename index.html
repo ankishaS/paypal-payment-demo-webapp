@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Add meta tags for mobile and IE -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title> PayPal Checkout Integration | Server Demo </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<!-- Set up a container element for the button -->
+<main id="cart-main">
+    <div class="site-title text-center">
+        <h1 class="font-title">Demo App</h1>
+    </div>
+    <div class="container">
+        <div class="grid">
+            <div class="col-1">
+                <div class="flex item justify-content-between">
+                    <div class="flex">
+                        <div class="img text-center">
+                            <img src="./assets/hat.jpg" alt=""  style="height: 100px;width: 150px;">
+                        </div>
+                        <div class="title">
+                            <h3>Brown Leather Hat</h3>
+                            <span>Fashion Accessories</span>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <h4 class="text-red">INR 349</h4>
+                    </div>
+                    <div id="paypal-button-container" style="position: center;height: auto;width: fit-content;"></div>
+
+                </div>
+            </div>
+        </div>
+
+<div></div>
+    </div>
+</main>
+<!-- Include the PayPal JavaScript SDK -->
+<script src="https://www.paypal.com/sdk/js?client-id=AUZZ8lWCcJlcNBX0OchPP8FuBUJPifPlb3C3PksFXnonTiaj3dEhNU53-TaPMJgeZpNd_w2_0-z9df9A&disable-funding=credit,card"></script>
+<script src="index.js"></script>
+
+
+</body>
+
+</html>
